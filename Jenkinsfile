@@ -23,10 +23,12 @@ stage('Publish JaCoCo Report') {
                minimumMethodCoverage: '80',
                minimumClassCoverage: '80'
     }
+/*
 stage('deployment') {
 
 sshagent(['248ed6ab-bf8c-457f-b053-7527cecdb360']) {
 sh "scp -o StrictHostKeyChecking=no  target/students.war ec2-user@54.219.11.253:/opt/apache-tomcat-9.0.106/webapps/"
 }
 }
+*/
 }
